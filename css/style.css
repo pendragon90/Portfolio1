@@ -1,5 +1,6 @@
 :root {
   --primary: #0ef;
+  --dark: rgb(0, 160, 172);
   --bg: rgba(0, 238, 255, 0.192);
 }
 
@@ -16,6 +17,7 @@
 
 body {
   background-color: var(--bg);
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -198,6 +200,7 @@ body {
 .kontenProyek .proyek .projectSatu a,
 .kontenProyek .proyek .projectDua a {
   color: black;
+  background-color: var(--primary);
   border-radius: 0.8rem;
   padding: 0.8rem;
   margin: 0.5rem;
@@ -205,7 +208,7 @@ body {
 
 .kontenProyek .proyek .projectSatu a:hover,
 .kontenProyek .proyek .projectDua a:hover {
-  background-color: var(--primary);
+  background-color: var(--dark);
 }
 
 /* .konten .proyek .projectSatu img {
