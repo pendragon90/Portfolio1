@@ -10,15 +10,14 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: 'Poppins';
-  transition: all 0.3s;
   object-fit: cover;
   object-position: center;
-  
+  transition: all 0.5s;
 }
 
 body {
   background-color: var(--bg);
-  overflow-x: hidden;
+  
 }
 
 .navbar {
@@ -293,54 +292,6 @@ footer {
 
 /* media query */
 
-@media only screen and (max-width: 480px) {
-  .navbar .navbar-nav {
-    width: 50%;
-    font-size: 1.1rem;
-    position: absolute;
-    top: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    right: -100%;
-    height: 100vh;
-    background-color: white;
-    border-left: 1px solid var(--primary);
-    border-top: 1px solid var(--primary);
-  }
-
-  .navbar .navbar-click #menu {
-    display: inline-block;
-  }
-
- .navbar .navbar-nav.active {
-    right: 0;
-  }
-
-  .hero .konten p {
-    mix-blend-mode: normal;
-  }
-
-  .hero::after {
-    height: 20vh;
-  }
-
-  .kontenProyek .proyek {
-    flex-direction: column;
-  }
-
-  .kontak .row {
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-  }
-
-  .kontak .row form,
-  .kontak .row .map {
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 767px) {
   /* aturan CSS untuk layar dengan lebar maksimum 767px */
   .navbar .navbar-nav {
@@ -348,14 +299,14 @@ footer {
     font-size: 1.1rem;
     position: absolute;
     top: 100%;
-    display: flex;
-    flex-direction: column;
+    display: none;
     padding: 1rem;
     right: -100%;
     height: 100vh;
     background-color: white;
     border-left: 1px solid var(--primary);
     border-top: 1px solid var(--primary);
+    
   }
 
   .navbar .navbar-click #menu {
@@ -364,6 +315,9 @@ footer {
 
  .navbar .navbar-nav.active {
     right: 0;
+    display: flex;
+    flex-direction: column;
+    
   }
 
   .hero .konten p {
